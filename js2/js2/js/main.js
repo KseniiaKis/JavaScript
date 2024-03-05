@@ -36,4 +36,33 @@ for (let i = 1; i < 3; i++){
 	personalMovieDB.movies[a] = b;
 };
 
+let i = 1;
+while (i < 3){
+	let a = prompt( "Один из последних просмотренных фильмов?", "");
+	while( a == "" || a == null || a.length > 50 ){
+		a = prompt( "Один из последних просмотренных фильмов?", "");
+	};
+	let b = prompt( "На сколько оцените его?", "")
+	while( b == "" || b == null || b.length > 50 ){
+		b = prompt( "На сколько оцените его?", "")
+	};
+	personalMovieDB.movies[a] = b;
+	i++
+};
+
+i = 1;
+do{
+	let a = prompt( "Один из последних просмотренных фильмов?", "");
+	while( a == "" || a == null || a.length > 50 ){
+		a = prompt( "Один из последних просмотренных фильмов?", "");
+	};
+	let b = prompt( "На сколько оцените его?", "")
+	while( b == "" || b == null || b.length > 50 ){
+		b = prompt( "На сколько оцените его?", "")
+	};
+	personalMovieDB.movies[a] = b;
+	i++
+}	
+while(i < 3);
+
 console.log(personalMovieDB);
