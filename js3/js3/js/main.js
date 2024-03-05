@@ -14,6 +14,9 @@ const personalMovieDB = {
 	privat: false
 };
 
+writeYourGenres();
+showMyDB();
+
 //HW
 function showMyDB(){
 	if (personalMovieDB.privat == false) {
@@ -23,6 +26,7 @@ function showMyDB(){
 
 function writeYourGenres() {
 	for(let i = 1; i < 4; i++){
-		personalMovieDB.genres = prompt( "Ваш любимый жанр под номером "+ i, "")
+		personalMovieDB.genres[i-1] = prompt( "Ваш любимый жанр под номером "+ i, "")
 	};
 }
+
