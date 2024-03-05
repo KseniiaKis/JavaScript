@@ -13,7 +13,7 @@ const personalMovieDB = {
 };
 
 for(let i=1; i < 3; i++) {
-  personalMovieDB.movies[i + prompt( "Один из последних просмотренных фильмов?", "")] = prompt( "На сколько оцените его?", "");
+  personalMovieDB.movies[ prompt( "Один из последних просмотренных фильмов?", "")] = prompt( "На сколько оцените его?", "");
 };
 
 console.log(personalMovieDB);
