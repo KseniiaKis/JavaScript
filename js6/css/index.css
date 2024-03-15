@@ -1,0 +1,41 @@
+.form__inner {
+  margin: 40px;
+  max-width: 350px;
+}
+
+.namefilm {
+  border: solid 2px #000000;
+}
+
+.namefilm__inner {
+  display: flex;
+}
+
+.namefilm__inner p {
+  margin-right: 20px;
+}
+
+.button__inner {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox__inner {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__inner input {
+  margin-right: 7px;
+}
+
+.myFilms {
+	margin-top: 40px;
+}
+
+.myFilmsLi {
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+}
